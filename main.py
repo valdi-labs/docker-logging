@@ -63,8 +63,8 @@ if __name__ == "__main__":
     logger.info('Loading dataset...')
     load_data_from_s3(session, S3_BUCKET, S3_FILENAME)
 
-    for count in range(5):
-        logger.info(f'Logging {count+1}/5')
+    for count in range(100):
+        logger.info(f'Logging {count+1}/100')
         time.sleep(3)
 
     logger.info('Updating local timestamp file...')
